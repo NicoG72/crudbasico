@@ -1,0 +1,34 @@
+{
+  "cafeteria": [
+    {
+      "nombreProducto": "cafe",
+      "precio": 50,
+      "categoria": "bebidaCaliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "medialuna",
+      "precio": 40,
+      "categoria": "dulce",
+      "id": 1
+    },
+    {
+      "nombreProducto": "Te",
+      "precioProducto": 50,
+      "categoria": "bebidaCaliente",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Pan",
+      "precioProducto": 100,
+      "categoria": "salado",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Alfajor de maicena ",
+      "precioProducto": 65,
+      "categoria": "dulce",
+      "id": 4
+    }
+  ]
+}

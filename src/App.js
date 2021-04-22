@@ -6,6 +6,7 @@ import ListarProductos from './components/ListarProductos';
 import AgregarProducto from './components/AgregarProducto';
 import Navigation from './components/common/Navigation';
 import Footer from './components/common/Footer';
+import EditarProducto from './components/EditarProducto';
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
         <Route exact path = '/productos'>
           <ListarProductos/>
         </Route>
-                <Route exact path = '/productos/nuevo-producto'>
+          <Route exact path = '/productos/nuevo-producto'>
           <AgregarProducto/>
+        </Route>
+          <Route exact path = '/productos/editar-producto'>
+          <EditarProducto/>
         </Route>
       </Switch>
       <Footer/>
