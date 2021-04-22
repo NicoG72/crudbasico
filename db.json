@@ -1,15 +1,9 @@
 {
   "cafeteria": [
     {
-      "nombreProducto": "cafe",
-      "precio": 50,
+      "nombreProducto": "Cafe",
+      "precioProducto": 50,
       "categoria": "bebidaCaliente",
-      "id": 1
-    },
-    {
-      "nombreProducto": "medialuna",
-      "precio": 40,
-      "categoria": "dulce",
       "id": 1
     },
     {
@@ -29,6 +23,24 @@
       "precioProducto": 65,
       "categoria": "dulce",
       "id": 4
+    },
+    {
+      "nombreProducto": "Limonada",
+      "precioProducto": 200,
+      "categoria": "bebidaFria",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Licuado de Durazno",
+      "precioProducto": 210,
+      "categoria": "bebidaFria",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Bollito",
+      "precioProducto": 35,
+      "categoria": "salado",
+      "id": 7
     }
   ]
 }
