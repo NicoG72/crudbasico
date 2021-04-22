@@ -38,6 +38,7 @@ setCategoria(e.target.value)
              body: JSON.stringify(producto)
           }
           const respuesta = await fetch(URL, configuracion);
+          console.log(respuesta);
           if(respuesta.status === 201){
             Swal.fire(
   'Producto Agregado!',

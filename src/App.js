@@ -7,8 +7,32 @@ import AgregarProducto from './components/AgregarProducto';
 import Navigation from './components/common/Navigation';
 import Footer from './components/common/Footer';
 import EditarProducto from './components/EditarProducto';
+import {useState, useEffect} from 'react';
 
 function App() {
+
+const URL = process.env.REACT_APP_API_URL;
+const [productos, setProductos] = useState([]);
+useEffect(() => {
+  //llamar a la api
+  consultarAPI();
+}, [])
+
+const consultarAPI = async () => {
+try {
+  const respuesta = await fetch(URL);
+  const informacion = await respuesta.json();
+  if (respuesta.status === 200) {
+    setProductos(informacion)
+  }
+  console.log(respuesta)
+  
+} catch (err) {
+  console.log(err);
+  //notificacion del error
+}
+}
+
   return (
     <Router>
       <Navigation/>
@@ -17,7 +41,7 @@ function App() {
           <Inicio/>
         </Route>
         <Route exact path = '/productos'>
-          <ListarProductos/>
+          <ListarProductos productos ={productos}/>
         </Route>
           <Route exact path = '/productos/nuevo-producto'>
           <AgregarProducto/>
